@@ -1,5 +1,10 @@
 package task9;
 
+
+/**
+ * The {@code WrongInputConsoleParametersException} inherits Exception,
+ * represents my own exception class.
+ */
 public class WrongInputConsoleParametersException extends Exception {
 
     private String mess;

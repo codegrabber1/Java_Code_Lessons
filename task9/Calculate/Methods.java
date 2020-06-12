@@ -1,10 +1,20 @@
 package task9.Calculate;
 
+/**
+ * The {@code Methods} represents the using my own exception.
+ * @see MyException
+ */
 public class Methods {
     private double num;
     private double denom;
     private char op;
 
+    /**
+     * Searching for exceptions.
+     * @param num
+     * @param denom
+     * @throws MyException
+     */
     public Methods(double num, double denom) throws MyException {
         this.num = num;
         this.denom = denom;
@@ -26,6 +36,11 @@ public class Methods {
         }
     }
 
+    /**
+     * Doing arithmetic operations.
+     * @param op
+     * @throws MyException
+     */
 
     public void doAction(char op) throws MyException {
 

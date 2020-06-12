@@ -1,5 +1,10 @@
 package task9.Calculate;
 
+
+/**
+ * The {@code MyException} inherits Exception,
+ * represents my own exception class.
+ */
 public class MyException extends Exception {
 
     private String message;

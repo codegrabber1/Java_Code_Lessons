@@ -15,7 +15,10 @@ public class Main {
 
         Months[] months = Months.values();
 
-
+        /**
+         * The loop which ask user choose the month or season
+         * to see the info about it.
+         **/
         while(true ){
             showAction();
             try{
