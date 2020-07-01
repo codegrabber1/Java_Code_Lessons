@@ -1,7 +1,6 @@
-package task11;
+package task12.car.arraylist;
 
 public class Wheel {
-
     private int wheelDiametr;
     private String materials;
 

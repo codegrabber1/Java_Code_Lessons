@@ -1,24 +1,21 @@
-package task11;
+package task12.car.arraylist;
 
 public class Car {
-
     private int horsePower;
     private int yearOfManufacture;
     private Engine engine;
     private Wheel wheel;
 
-    public Car(int horsePower, int yearOfManufacture,
-               Engine engine, Wheel wheel) {
+    public Car(int horsePower, int yearOfManufacture, Engine engine, Wheel wheel) {
         super();
         this.horsePower = horsePower;
         this.yearOfManufacture = yearOfManufacture;
         this.engine = engine;
         this.wheel = wheel;
-
     }
 
     /**
-     * @return the getHorsePower
+     * @return the horsePower
      */
     public int getHorsePower() {
         return horsePower;
@@ -42,7 +39,7 @@ public class Car {
     /**
      * The info about a wheel,
      * it diameter and materials.
-     * @return wheel
+     * @return
      */
     public Wheel getWheel() {
         return wheel;
@@ -57,4 +54,6 @@ public class Car {
 
         return message;
     }
+
+
 }
