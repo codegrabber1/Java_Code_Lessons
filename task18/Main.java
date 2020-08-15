@@ -55,10 +55,10 @@ public class Main{
     @SuppressWarnings("unchecked")
     private static void addToList(List l, String a) {
         /**
-         * Під час виконання параметри універсальних типів нівелюються, тому List<Integer> стає List, і
-         * до нього можна додати будь який реферальний тип.
+         * Перед виконання параметри типів можна замінити, List<Integer> на List. Таким чином, це дасть можливість
+         * додати будь який реферальний тип до списку.
          *
-         * Якщо змінити addToList (List l) на addToList (List<Integer> l),
+         * І навпаки, якщо змінити addToList (List l) на addToList (List<Integer> l),
          * компілятор не дозволить додати String до цього списку. Буде exception:
          * Unresolved compilation problem:
          * The method add(Integer) in the type List<Integer> is not applicable for the arguments (String)
