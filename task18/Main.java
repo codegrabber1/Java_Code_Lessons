@@ -55,7 +55,7 @@ public class Main{
     @SuppressWarnings("unchecked")
     private static void addToList(List l, String a) {
         /**
-         * Перед виконання параметри типів можна замінити, List<Integer> на List. Таким чином, це дасть можливість
+         * Перед виконання параметри типів можна прибрати, List<Integer> -> List. Таким чином, це дасть можливість
          * додати будь який реферальний тип до списку.
          *
          * І навпаки, якщо змінити addToList (List l) на addToList (List<Integer> l),
