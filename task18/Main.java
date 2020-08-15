@@ -49,6 +49,11 @@ public class Main{
 
         System.out.println("String успішно додано до List<Integer>");
 
+
+    }
+
+    @SuppressWarnings("unchecked")
+    private static void addToList(List l, String a) {
         /**
          * Під час виконання параметри універсальних типів нівелюються, тому List<Integer> стає List, і
          * до нього можна додати будь який реферальний тип.
@@ -58,10 +63,6 @@ public class Main{
          * Unresolved compilation problem:
          * The method add(Integer) in the type List<Integer> is not applicable for the arguments (String)
          */
-    }
-
-    @SuppressWarnings("unchecked")
-    private static void addToList(List l, String a) {
         l.add(a);
     }
 }
