@@ -30,15 +30,34 @@ public class Main{
 
         System.out.println("After removing");
         mp.showMap();
-//        List<Integer> ls = new ArrayList<>();
-//
-//        addToList(ls, "Hello");
-//
-//        String s = "World!";
-//
-//        addToList(ls, s);
-//
-//        System.out.println(ls);
+
+        /**
+         * For the first task (min).
+         * Inserting String type into the List of The Integer type.
+         */
+        List<Integer> ls = new ArrayList<>();
+
+        addToList(ls, "Hello");
+
+        String s = "World!";
+
+        addToList(ls, s);
+
+        System.out.println("");
+
+        System.out.println(ls);
+
+        System.out.println("String успішно додано до List<Integer>");
+
+        /**
+         * Під час виконання параметри універсальних типів нівелюються, тому List<Integer> стає List, і
+         * до нього можна додати будь який реферальний тип.
+         *
+         * Якщо змінити addToList (List l) на addToList (List<Integer> l),
+         * компілятор не дозволить додати String до цього списку. Буде exception:
+         * Unresolved compilation problem:
+         * The method add(Integer) in the type List<Integer> is not applicable for the arguments (String)
+         */
     }
 
     @SuppressWarnings("unchecked")
