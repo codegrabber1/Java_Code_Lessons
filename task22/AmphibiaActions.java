@@ -1,6 +1,6 @@
 package task22;
 
-public interface AmphibiActions {
+public interface AmphibiaActions {
 
     void AmAct(String act);
 }

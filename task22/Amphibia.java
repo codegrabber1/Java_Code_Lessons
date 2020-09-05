@@ -2,5 +2,5 @@ package task22;
 
 public class Amphibia {
 
-    AmphibiActions amAct = System.out::println;
+    AmphibiaActions amAct = System.out::println;
 }
