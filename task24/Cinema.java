@@ -83,7 +83,10 @@ public class Cinema{
      * Showing the whole list of the cinema in the schedule.
      */
     void listOfSchedule(){
-       schedules.forEach((key, value) -> System.out.println(value));
+        schedules.entrySet().stream()
+                .sorted(Map.Entry.<String, Schedule>comparingByKey().reversed())
+                .forEach(System.out::println);
+
     }
 
     /**
