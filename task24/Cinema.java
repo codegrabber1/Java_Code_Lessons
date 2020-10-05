@@ -1,7 +1,10 @@
 package task24;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.TreeMap;
+
+import static java.util.Map.Entry.comparingByKey;
 
 public class Cinema{
     private TreeMap<String, Schedule> schedules = new TreeMap<>();

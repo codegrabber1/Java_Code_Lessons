@@ -21,8 +21,12 @@ public class Schedule{
         return seances;
     }
 
+
+
+
     @Override
     public String toString() {
+
         return "Schedule: " + seances;
     }
 }

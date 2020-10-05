@@ -1,5 +1,5 @@
 package task24;
-public class Seance {
+public class Seance implements Comparable<Seance>{
     private Movie movie;
     private Time startTime;
     private Time endTime;
@@ -14,7 +14,7 @@ public class Seance {
 
     @Override
     public String toString() {
-        return "Seance{" +
+        return "Seance {" +
                 "movie=" + movie +
                 ", startTime=" + startTime +
                 ", endTime=" + endTime +
@@ -34,13 +34,12 @@ public class Seance {
         return startTime;
     }
 
-//    @Override
-//    public int compareTo(Seance o) {
-//        if (this.getStartTime().getHour() == o.getStartTime().getHour()) {
-//            return this.getStartTime().getMin() - o.getStartTime().getMin();
-//        } else {
-//            return this.getStartTime().getHour() - o.getStartTime().getHour();
-//        }
-//    }
-
+    @Override
+    public int compareTo(Seance o) {
+        if (this.getStartTime().getHour() == o.getStartTime().getHour()) {
+            return this.getStartTime().getMin() - o.getStartTime().getMin();
+        } else {
+            return this.getStartTime().getHour() - o.getStartTime().getHour();
+        }
+    }
 }
